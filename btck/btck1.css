@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+body {
+    background-color: #C8C8C8;
+    font-family: Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.float-left{
+    float: left;
+}
+.container{
+    background-color: #081933;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    position: relative;
+}
+.header{
+    height: 70px;
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 60%;
+    margin: 0 auto;
+}
+.menu{
+    margin: 0px 5px;
+}
+#search input{ 
+    margin: 0px 50px;
+    background-color: rgba(0, 179, 255, 0.116);
+    border: unset;
+    color: #2CBCFC;
+    padding: 5px;
+}
+.menu a{
+    text-decoration: none;
+    color: #2CBCFC;
+    font-size: 14px;
+}
+.menu li{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu button{
+    background-color: rgba(0, 179, 255, 0.116) ;
+    color: #2CBCFC;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5%;
+    border-bottom: rgb(0, 177, 255) solid 1px ;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.menu button:hover{
+    color: white;
+    background-color:rgb(0, 177, 255) ;
+}
+.menu-game{
+    display: none;
+}
+.theloaigame{
+    position: relative;
+}
+
+.menu-game{
+    background: linear-gradient(#050C15,rgb(18, 37, 58));
+    width: 250px;
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    display: none;
+    font-size: 13px;
+    color: #2CBBFB;
+
+}
+.menu-game-item a{
+    color: rgb(83, 132, 153);
+    padding-top: 5px;
+    text-decoration: none;
+
+}
+/* .menu-game-item {
+    color: rgb(83, 132, 153);
+    padding-top: 5px;
+} */
+/* .menu-game-item a:hover{
+    color: #2CBBFB;
+    font-size: 15px;
+} */
+.slide{
+    height: 800px;
+    width: 100% ;
+    background-image: url(./bg.png);
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+.slide-container{
+    width: 60%;
+    position: absolute; 
+    top:45%; 
+    left: 20%;
+    color: white;
+}
+.slide-container h1,.slide-container p{
+    margin: 20px 0;
+}
+.slide-container button{
+    cursor: pointer; 
+    width: 120px;
+    height: 40px; 
+    font-size: 19px; 
+    background-color: #2CB0FC; 
+    border: none; 
+    border-radius: 3px; 
+    color: white;
+}
+.maincont{
+    background-color: #070F18;
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+}
+.menu2-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 -4px;
+    background: linear-gradient(to right ,#11273E, #03060B);
+}
+.menu2 button{
+    padding: 0px;
+    border: 0px;
+    height: 60px; 
+    width: 100%; 
+    background: none; 
+    color: #30ADE6; 
+    cursor: pointer;
+    text-align: center;
+}
+.menu2{ 
+    flex-grow: 1;
+    padding: 0px 30px;
+    border-bottom: rgba(0, 179, 255, 0) solid 1px ;
+}
+.menu2 .img{
+    margin: 3px;
+}
+.menu2:hover{
+    background-color:#03060B ;
+    border-bottom: rgb(0, 177, 255) solid 1px ;
+}
+.dropdown {
+    position: relative;
+    display: inline-block; 
+    right: 0px; 
+}
+.dropbtn {
+    background: linear-gradient(to right ,#11273E, #03060B);
+    border-radius: 5%;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    border: blue;
+    cursor: pointer;
+    width: 160px;
+    float: right;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content { display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.maincont-item{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.item{
+    width: 32%;
+    height: 190px;
+    margin: 10px 0;
+    background-image: url(./bat.png);
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    position: relative;
+    font-size: 13px;
+}
+.item .pro{
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
+}
+.item .name{
+    color: white;
+    font-size: 16px;
+}
+.item .pice{
+    color: #FF8800;
+    font-size: 16px;
+}
+.item .inp{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.item button{
+    color: white;
+    padding: 7px 10px;
+    border-radius: 3px;
+    border: rgb(0, 177, 255) solid 1px;
+    background-color:rgba(0, 179, 255, 0.39) ;
+    font-size: 13pt;
+}
+.item button:hover{
+    background-color:rgb(0, 177, 255) ;
+}
+.item .discout{
+    color: white;
+    background-color: tomato;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 3px;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    display: none;
+}
+.pagination{ 
+    margin: 20px 0;;
+    text-align: center;
+}
+.pagination a{
+    text-decoration:none;
+    color: white;
+    background-color:rgba(0, 179, 255, 0.39) ;
+    padding: 5px 7px;
+    font-size: 15px;
+    border-radius: 2px;
+}
+.pagination a:hover{
+    background-color:rgb(0, 177, 255) ;
+}
+.menu3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right ,#11273E,#091523 , #03060B);
+}
+.menu3 li{ 
+    flex-grow: 1;
+    padding: 30px 0px;
+    border-bottom: rgba(0, 179, 255, 0) solid 1px ;
+}
+.menu3 li:hover{ 
+
+    background-color:rgb(7, 17, 27) ;
+    border-bottom: rgb(0, 177, 255) solid 1px ;
+}
+.menu3 a{
+    text-decoration: none;
+    color: rgb(0, 177, 255);
+    
+}
+.slide2{   
+    margin: 10px 0px;
+    position: relative;
+}
+.slide2 img{
+    width: 100%;
+    height: 300px;
+}
+.angle-left{
+    color: white;
+    font-size: 16pt;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: -50%;
+}
+.angle-right{
+  
+    color: white;
+    font-size: 16pt;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: -50%;
+}
+.slie-con{
+    width: 65%;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 2%;
+    left: 3%;
+}
+#all{
+    text-align: right;
+margin: 10px 0px 30px 0px;}
+#all button{
+    border: none;
+    padding: 10px;
+    background-color: unset ;
+    color: rgb(0, 177, 255);
+    
+}
+.footer,.end{
+    display: flex;  
+    justify-content: space-between;;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: rgb(0, 177, 255) solid 1px ;
+}
+.footer p{
+    color: white;
+    font-size: 14px;
+    margin: 20px 10px;
+}
+.footer a{
+    text-decoration: unset;
+    color: rgb(0, 177, 255);
+}
+.suport{
+    position: fixed;
+    top: 30%;
+    right: 0%; 
+    text-align: center;
+}
+.suport p{
+    color: white;
+    font-size: 14px;
+}
+.end p{
+    color: white;
+    font-size: 14px;
+    margin: 30px 10px;
+}
